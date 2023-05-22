@@ -99,4 +99,4 @@ Linux
 Windows
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Building from source on Windows is currently difficult to configure. Docker containers for cross-compiling are available at `openai/travis-build <https://hub.docker.com/r/openai/travis-build/>`_.
+Building from source on Windows is not currently supported, but may be supported in the future.
