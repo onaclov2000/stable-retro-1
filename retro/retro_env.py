@@ -175,7 +175,9 @@ class RetroEnv(gym.Env):
                 for i in range(len(ap)):
                     action |= int(ap[i]) << i
                 if self.use_restricted_actions == retro.Actions.FILTERED:
+                    print ("Action before Filter", action)
                     action = self.data.filter_action(action)
+                    print ("Action after Filter", action)
             ap = np.zeros([self.num_buttons], np.uint8)
             for i in range(self.num_buttons):
                 ap[i] = (action >> i) & 1
